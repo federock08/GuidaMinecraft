@@ -1,0 +1,153 @@
+/* Reset base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f3f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 5px;
+}
+
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #f39c12;
+}
+
+.page-content {
+  max-width: 1100px;
+  margin: 30px auto 50px;
+  padding: 0 20px;
+}
+
+/* Hero section */
+.hero-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-section h2 {
+  font-size: 2rem;
+  margin: 15px 0 10px;
+  color: #2c3e50;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Content sections */
+.content-section {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-block, .image-block {
+  flex: 1 1 45%;
+}
+
+.text-block h3 {
+  font-size: 1.6rem;
+  color: #34495e;
+  margin-bottom: 12px;
+}
+
+.text-block p, .text-block ul {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.text-block ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.text-block ul li {
+  margin-bottom: 8px;
+}
+
+/* Image styles */
+.image-block img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+/* Advertisement banner */
+.ad-banner-horizontal {
+  background-color: #ecf0f1;
+  border: 2px dashed #bdc3c7;
+  padding: 15px;
+  text-align: center;
+  font-style: italic;
+  color: #7f8c8d;
+  margin: 40px 0;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 14px 0;
+  font-size: 0.9rem;
+  border-top: 3px solid #f39c12;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .content-section {
+    flex-direction: column;
+  }
+  .text-block, .image-block {
+    flex: 1 1 100%;
+  }
+}
